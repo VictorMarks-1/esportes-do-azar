@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esportes do Azar - Roleta do Azar</title>
+  
+  <!-- Estilos Globais e Variáveis -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  
+  <!-- Estilos Específicos da Página -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho / Navegação -->
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="Logo Esportes do Azar">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="roleta-do-azar.html" class="active">Roleta do Azar</a></li>
+          <li><a href="calculadora-de-prejuizo.html">Calculadora de Prejuízo</a></li>
+          <li><a href="saude-e-apoio.html">Saúde e Apoio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="container slot-page">
+    
+    <!-- Cabeçalho do Jogo -->
+    <div class="game-header">
+      <span class="badge">Mecânica Near-Miss Engine</span>
+      <h1>Caça-Níquel "Quase Lá" 🐯</h1>
+      <p class="game-description">
+        Cada tentativa custa <strong>R$ 10,00 fictícios</strong>. O algoritmo foi calibrado para gerar 2 símbolos iguais quase todas as vezes, simulando a manipulação psicológica das plataformas.
+      </p>
+    </div>
+
+    <!-- Máquina Caça-Níquel -->
+    <div class="slot-machine-card">
+      <div class="reels-container">
+        <div class="reel" id="reel-1">🍒</div>
+        <div class="reel" id="reel-2">🍋</div>
+        <div class="reel" id="reel-3">7️⃣</div>
+      </div>
+
+      <div class="cost-row">
+        <span>Custo da Rodada:</span>
+        <span class="cost-val">- R$ 10,00</span>
+      </div>
+
+      <button id="spin-btn" class="spin-btn">🎰 PUXAR A ALAVANCA!</button>
+      
+      <div class="bank-status" id="bank-status">
+        Banca fictícia restaurada para R$ 100,00.
+      </div>
+    </div>
+
+    <!-- Cards Educativos e Estatísticas -->
+    <div class="info-grid">
+      
+      <!-- Card Explicativo -->
+      <article class="info-card">
+        <h3>🧪 O que é o efeito "Quase-Vitória"?</h3>
+        <p>
+          Quando dois símbolos iguais aparecem e o terceiro para a um passo de distância, seu cérebro interpreta como <em>"quase acertei, a próxima é garantida"</em>, liberando dopamina semelhante à de uma vitória real, mesmo tendo perdido dinheiro.
+        </p>
+      </article>
+
+      <!-- Card de Estatísticas -->
+      <article class="info-card">
+        <h3>📉 Estatísticas da Sessão</h3>
+        <ul class="stats-list">
+          <li>Tentativas: <strong id="stat-attempts">0</strong></li>
+          <li>Total Perdido: <strong id="stat-lost" class="danger">R$ 0,00</strong></li>
+          <li>Falsas Vitórias (Near-Miss): <strong id="stat-nearmiss" class="warning">0</strong></li>
+        </ul>
+      </article>
+
+    </div>
+
+  </main>
+
+  <!-- Rodapé Institucional -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-left">
+        <img src="assets/images/unisinos.png" alt="Logotipo Unisinos">
+      </div>
+      
+      <div class="footer-center">
+        <p>Esportes do Azar © 2026 – Projeto Académico de Conscientização sobre Ludopatia. O jogo não é investimento. Se precisar de apoio, procure ajuda profissional.</p>
+      </div>
+
+      <div class="footer-right">
+        <p><strong>INTEGRANTES:</strong></p>
+        <p>GUSTAVO TAVARES</p>
+        <p>VICTOR MARQUES DA CRUZ</p>
+        <p>ANDRÉ LUIZ GONÇALVES TEIXEIRA</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/slot.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esportes do Azar - Saúde e Apoio</title>
+  
+  <!-- Estilos Globais e Variáveis -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  
+  <!-- Estilos Específicos da Página -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho / Navegação -->
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="Logo Esportes do Azar">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="roleta-do-azar.html">Roleta do Azar</a></li>
+          <li><a href="calculadora-de-prejuizo.html">Calculadora de Prejuízo</a></li>
+          <li><a href="saude-e-apoio.html" class="active">Saúde e Apoio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="container health-page">
+    
+    <!-- Cabeçalho da Seção -->
+    <div class="health-hero">
+      <span class="badge-cyan">Acolhimento & Prevenção</span>
+      <h1>Pronto-Socorro & Artigos Especializados</h1>
+      <p>
+        O vício em apostas não é falta de força de vontade, mas um processo neurobiológico que possui tratamento gratuito e suporte comunitário.
+      </p>
+    </div>
+
+    <!-- Cards de Apoio Imediato -->
+    <div class="support-cards-grid">
+      
+      <!-- Card 1: CVV -->
+      <article class="support-card">
+        <div class="support-icon pink">📞</div>
+        <h3>CVV - Apoio Emocional</h3>
+        <p>Atendimento confidencial e gratuito para apoio emocional e prevenção do suicídio.</p>
+        <a href="tel:188" class="support-btn pink-border">Ligue 188</a>
+      </article>
+
+      <!-- Card 2: Jogadores Anônimos -->
+      <article class="support-card">
+        <div class="support-icon yellow">🤝</div>
+        <h3>Jogadores Anônimos</h3>
+        <p>Irmandade de homens e mulheres que compartilham suas experiências para resolver seu problema comum.</p>
+        <a href="https://jogadoresanonimos.com.br" target="_blank" class="support-link">jogadoresanonimos.com.br ↗</a>
+      </article>
+
+      <!-- Card 3: CAPS -->
+      <article class="support-card">
+        <div class="support-icon purple">🏥</div>
+        <h3>CAPS (SUS)</h3>
+        <p>Centros de Atenção Psicossocial oferecem acolhimento público especializado com psiquiatras e psicólogos.</p>
+        <button class="support-pill">Atendimento presencial no seu município</button>
+      </article>
+
+    </div>
+
+    <!-- Biblioteca de Conteúdo Preventivo -->
+    <section class="library-section">
+      <div class="library-header">
+        <div>
+          <h2>Biblioteca de Conteúdo Preventivo</h2>
+          <p>Filtragem de artigos educativos desenvolvidos para este portal</p>
+        </div>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="mental">Saúde Mental</button>
+          <button class="filter-btn" data-filter="finance">Finanças</button>
+        </div>
+      </div>
+
+      <!-- Grid de Artigos -->
+      <div class="articles-grid">
+        
+        <!-- Artigo 1 -->
+        <article class="article-card" data-category="mental">
+          <div class="article-meta">
+            <span class="tag-green">Saúde Mental</span>
+            <span class="read-time">5 min de leitura</span>
+          </div>
+          <h4>O ciclo da dopamina: como os jogos digitais aprisionam a atenção</h4>
+          <p>Entenda como a antecipação da recompensa e os barulhos gráficos do cassino simulam êxtase cerebral, gerando compulsão similar a substâncias químicas.</p>
+        </article>
+
+        <!-- Artigo 2 -->
+        <article class="article-card" data-category="finance">
+          <div class="article-meta">
+            <span class="tag-orange">Finanças</span>
+            <span class="read-time">4 min de leitura</span>
+          </div>
+          <h4>Blindagem Bancária: limites de PIX noturno e bloqueio de transferências</h4>
+          <p>Passo a passo prático para configurar travas no aplicativo do seu banco, impedindo depósitos impulsivos durante crises de ansiedade.</p>
+        </article>
+
+        <!-- Artigo 3 -->
+        <article class="article-card" data-category="mental">
+          <div class="article-meta">
+            <span class="tag-green">Saúde Mental</span>
+            <span class="read-time">6 min de leitura</span>
+          </div>
+          <h4>Como conversar com familiares quando as apostas fogem do controle</h4>
+          <p>A importância de quebrar o estigma e a culpa para construir uma rede de acolhimento sólida baseada no diálogo respeitoso.</p>
+        </article>
+
+        <!-- Artigo 4 -->
+        <article class="article-card" data-category="finance">
+          <div class="article-meta">
+            <span class="tag-orange">Finanças</span>
+            <span class="read-time">3 min de leitura</span>
+          </div>
+          <h4>A ilusão do 'Rollover': como as regras dos bônus prendem o seu dinheiro</h4>
+          <p>Análise estatística das regras de apostas que impedem o usuário de sacar qualquer saldo até que aposte dezenas de vezes o valor depositado.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Boletim Semanal de Autocuidado -->
+    <div class="newsletter-box">
+      <h3>Boletim Semanal de Autocuidado</h3>
+      <p>Receba artigos e estratégias de recuperação diretamente por e-mail.</p>
+      <form class="newsletter-form" id="newsletter-form">
+        <input type="email" placeholder="seu-email@dominio.com" required>
+        <button type="submit">Inscrever-se</button>
+      </form>
+    </div>
+
+  </main>
+
+  <!-- Rodapé Institucional -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-left">
+        <img src="assets/images/unisinos.png" alt="Logótipo Unisinos">
+      </div>
+      
+      <div class="footer-center">
+        <p>Esportes do Azar © 2026 – Projeto Acadêmico de Conscientização sobre Ludopatia. O jogo não é investimento. Se precisar de apoio, procure ajuda profissional.</p>
+      </div>
+
+      <div class="footer-right">
+        <p><strong>INTEGRANTES:</strong></p>
+        <p>GUSTAVO TAVARES</p>
+        <p>VICTOR MARQUES DA CRUZ</p>
+        <p>ANDRÉ LUIZ GONÇALVES TEIXEIRA</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/health.js"></script>
+</body>
+</html>
