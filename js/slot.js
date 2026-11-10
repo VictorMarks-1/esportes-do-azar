@@ -23,19 +23,15 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Desabilita botão durante a animação
     spinBtn.disabled = true;
 
-    // Deduz o custo
     bank -= 10;
     attempts++;
     totalLost += 10;
 
-    // Atualiza contadores de imediato
     statAttempts.innerText = attempts;
     statLost.innerText = `R$ ${totalLost.toFixed(2).replace('.', ',')}`;
 
-    // Lógica do Near-Miss (80% de chance de dar 2 símbolos iguais e 1 diferente)
     let result = [];
     const isNearMiss = Math.random() < 0.8;
 
@@ -48,7 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
       result = [matchSymbol, matchSymbol, diffSymbol];
       nearMisses++;
     } else {
-      // Rodada comum totalmente aleatória
       result = [
         symbols[Math.floor(Math.random() * symbols.length)],
         symbols[Math.floor(Math.random() * symbols.length)],
@@ -56,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
       ];
     }
 
-    // Animação dos carretéis
     let counter = 0;
     const interval = setInterval(() => {
       reel1.innerText = symbols[Math.floor(Math.random() * symbols.length)];
@@ -66,12 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (counter > 15) {
         clearInterval(interval);
-        // Exibe o resultado final
         reel1.innerText = result[0];
         reel2.innerText = result[1];
         reel3.innerText = result[2];
 
-        // Atualiza status e UI
         statNearMiss.innerText = nearMisses;
         bankStatus.innerText = `Saldo atual da banca: R$ ${bank.toFixed(2).replace('.', ',')}`;
         

@@ -1,21 +1,14 @@
-/* ==========================================
-   ESTILOS GLOBAIS - VISUAL CRU E BRUTALISTA
-   ========================================== */
-
-/* Remove qualquer arredondamento e sombra suave de IA em todo o site */
 *, *::before, *::after {
   border-radius: 0 !important;
   box-shadow: none !important;
 }
 
-/* Containers principais das páginas */
 .home-page, .slot-page, .health-page, .calc-page {
   max-width: 1100px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
-/* Padronização universal para todos os cards, caixas e painéis */
 .hero-section, 
 .home-card, 
 .info-banner, 
@@ -35,7 +28,6 @@
   margin-bottom: 30px;
 }
 
-/* Tipografia e Títulos básicos */
 h1, h2, h3, h4 {
   color: var(--text-color);
   font-weight: 700;
@@ -47,11 +39,6 @@ p, span, li {
   line-height: 1.5;
 }
 
-/* ==========================================
-   COMPONENTES E BOTÕES (Quadrados e Brancos)
-   ========================================== */
-
-/* Badges e marcações textuais */
 .badge-emerald, .badge-amber, .badge-cyan, .badge, .tag-green, .tag-orange, .badge-success, .badge-danger {
   display: inline-block;
   background-color: #0b0f15;
@@ -63,7 +50,6 @@ p, span, li {
   margin-bottom: 15px;
 }
 
-/* Botões gerais e de ação com espaçamento adequado (respiro) */
 button, 
 .btn-primary, 
 .btn-secondary, 
@@ -91,7 +77,6 @@ button:hover, .btn-primary:hover, .btn-secondary:hover, .filter-btn:hover {
   color: #000000;
 }
 
-/* Campos de formulário, inputs e selects com margens organizadas */
 .form-group, .triage-question {
   margin-bottom: 20px !important;
 }
@@ -112,10 +97,6 @@ input:focus, select:focus {
   background-color: #1a2332;
 }
 
-/* ==========================================
-   GRIDS E LAYOUTS ESPECÍFICOS
-   ========================================== */
-
 .home-cards-grid, .support-cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -130,7 +111,6 @@ input:focus, select:focus {
   margin-bottom: 30px;
 }
 
-/* Hero Section da Home */
 .hero-section {
   text-align: left;
   padding: 40px;
@@ -142,7 +122,7 @@ input:focus, select:focus {
 }
 
 .text-gradient {
-  color: #ffffff; /* Mantém sólido para a estética cru */
+  color: #ffffff;
 }
 
 .hero-actions {
@@ -150,10 +130,6 @@ input:focus, select:focus {
   gap: 15px;
   margin-top: 20px;
 }
-
-/* ==========================================
-   CAÇA-NÍQUEL (Centralizado e Ajustado)
-   ========================================== */
 
 .slot-page .game-header {
   text-align: center !important;
@@ -207,10 +183,6 @@ input:focus, select:focus {
   max-width: 400px;
 }
 
-/* ==========================================
-   RODAPÉ E RESPONSIVIDADE
-   ========================================== */
-
 .footer-custom {
   display: flex;
   justify-content: space-between;
@@ -243,8 +215,8 @@ input:focus, select:focus {
 }
 
 .support-link {
-  color: #ffffff; /* ou color: white; */
-  text-decoration: none; /* Opcional: remove o sublinhado padrão do link */
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .clickable-card {

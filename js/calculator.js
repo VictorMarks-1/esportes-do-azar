@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Simulador de Impacto Financeiro
   const weeklyInput = document.getElementById("weekly-amount");
   const calcBtn = document.getElementById("calc-btn");
   
@@ -11,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function calculateFinancialImpact() {
     const weeklyValue = parseFloat(weeklyInput.value) || 0;
     
-    // Aproximando: 6 meses = 26 semanas, 1 ano = 52 semanas, 5 anos = 260 semanas
     const total6Meses = weeklyValue * 26;
     const total1Ano = weeklyValue * 52;
     const total5Anos = weeklyValue * 260;
@@ -27,12 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Executa o cálculo exclusivamente ao clicar no botão
   if (calcBtn) {
     calcBtn.addEventListener("click", calculateFinancialImpact);
   }
 
-  // 2. Questionário de Triagem (DSM-5 com pesos 0, 1 e 2)
   const triageBtn = document.getElementById("triage-btn");
   const triageSelects = document.querySelectorAll(".triage-select");
   const diagBadge = document.getElementById("diag-badge");
