@@ -19,13 +19,4 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
-
-  const newsletterForm = document.getElementById("newsletter-form");
-  if (newsletterForm) {
-    newsletterForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      alert("Inscrição realizada com sucesso! Obrigado por apoiar a conscientização.");
-      newsletterForm.reset();
-    });
-  }
 });

@@ -9,9 +9,4 @@ document.addEventListener("DOMContentLoaded", () => {
       link.classList.add("active");
     }
   });
-  const carouselContainer = document.querySelector(".carousel-container");
-  
-  if (carouselContainer) {
-    console.log("Carrossel inicializado com sucesso na página Home.");
-  }
 });
