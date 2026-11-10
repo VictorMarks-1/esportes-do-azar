@@ -30,7 +30,7 @@
 .reel,
 .filter-buttons {
   background-color: var(--bg-card);
-  border: 1px solid #ffffff;
+  border: 3px solid #18f504;
   padding: 25px;
   margin-bottom: 30px;
 }
@@ -240,4 +240,23 @@ input:focus, select:focus {
   .hero-actions {
     flex-direction: column;
   }
+}
+
+.support-link {
+  color: #ffffff; /* ou color: white; */
+  text-decoration: none; /* Opcional: remove o sublinhado padrão do link */
+}
+
+.clickable-card {
+  text-decoration: none !important;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.clickable-card:hover {
+  background-color: #1a2332;
+  border-color: #ffffff !important;
 }

@@ -4,7 +4,8 @@
   --header-bg: #111822;         /* Fundo da barra de navegação superior */
   --text-color: #ffffff;        /* Texto principal em branco */
   --text-muted: #94a3b8;        /* Texto secundário/cinza */
-  --border-green: #00ff66;      /* Verde vibrante das bordas dos cards */
+  --border-color: #20f10d;      /* Bordas brancas sólidas para o estilo cru */
   --btn-bg: #2a3748;            /* Cor de fundo dos botões internos */
+  --border-radius: 0px;         /* Cantos perfeitamente retos (sem arredondamento) */
   --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
