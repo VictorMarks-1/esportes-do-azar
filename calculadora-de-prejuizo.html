@@ -1,166 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Esportes do Azar - Calculadora de Prejuízo</title>
-  
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/global.css">
-  
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Esportes do Azar - Calculadora de Prejuízo</title>
 
-  <header>
-    <div class="container header-content">
-      <div class="logo">
-        <a href="index.html">
-          <img src="assets/images/logo.png" alt="Logo Esportes do Azar">
-        </a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="roleta-do-azar.html">Roleta do Azar</a></li>
-          <li><a href="calculadora-de-prejuizo.html" class="active">Calculadora de Prejuízo</a></li>
-          <li><a href="saude-e-apoio.html">Saúde e Apoio</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+        <link rel="stylesheet" href="css/variables.css" />
+        <link rel="stylesheet" href="css/global.css" />
 
-  <main class="container calc-page">
-    
-    <div class="calc-hero">
-      <span class="badge-amber">Saúde Financeira & Comportamental</span>
-      <h1>Calculadora do Rombo & Triagem</h1>
-      <p>
-        Descubra o impacto real das apostas a médio e longo prazo e avalie seus hábitos de jogo através de critérios de saúde mental.
-      </p>
-    </div>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Logo Esportes do Azar" />
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="roleta-do-azar.html">Caça-Níquel Near-Miss</a></li>
+                        <li><a href="calculadora-de-prejuizo.html" class="active">Calculadora de Prejuízo</a></li>
+                        <li><a href="saude-e-apoio.html">Saúde e Apoio</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <div class="calc-grid">
-      
-      <section class="calc-card">
-        <div class="card-title-group">
-          <span class="icon-box">💵</span>
-          <div>
-            <h2>Simulador de Impacto Financeiro</h2>
-            <p>Calcule o que esse valor representaria na vida real</p>
-          </div>
-        </div>
+        <main class="container calc-page">
+            <div class="calc-hero">
+                <span class="badge-amber">Saúde Financeira & Comportamental</span>
+                <h1>Calculadora do Rombo & Triagem</h1>
+                <p>Descubra o impacto real das apostas a médio e longo prazo e avalie seus hábitos de jogo através de critérios de saúde mental.</p>
+            </div>
 
-        <div class="form-group">
-          <label for="weekly-amount">QUANTO VOCÊ APOSTA POR SEMANA (R$)?</label>
-          <input type="number" id="weekly-amount" value="5" min="0" step="1">
-        </div>
+            <div class="calc-grid">
+                <section class="calc-card">
+                    <div class="card-title-group">
+                        <span class="icon-box">💵</span>
+                        <div>
+                            <h2>Simulador de Impacto Financeiro</h2>
+                            <p>Calcule o que esse valor representaria na vida real</p>
+                        </div>
+                    </div>
 
-        <button id="calc-btn" class="calc-action-btn">Projetar Perdas Acumuladas</button>
+                    <div class="form-group">
+                        <label for="weekly-amount">QUANTO VOCÊ APOSTA POR SEMANA (R$)?</label>
+                        <input type="number" id="weekly-amount" value="5" min="0" step="1" />
+                    </div>
 
-        <div class="results-box">
-          <div class="result-row">
-            <span>Em 6 Meses:</span>
-            <span class="result-val" id="res-6m">R$ 129,90</span>
-          </div>
-          <div class="result-row">
-            <span>Em 1 Ano:</span>
-            <span class="result-val" id="res-1y">R$ 259,80</span>
-          </div>
-          <div class="result-row">
-            <span>Em 5 Anos:</span>
-            <span class="result-val" id="res-5y">R$ 1.299,00</span>
-          </div>
-        </div>
+                    <button id="calc-btn" class="calc-action-btn">Projetar Perdas Acumuladas</button>
 
-        <div class="tip-box" id="financial-tip">
-          💡 Em 1 ano, você poderia montar uma reserva de emergência ou quitar faturas de cartão de crédito.
-        </div>
-      </section>
+                    <div class="results-box">
+                        <div class="result-row">
+                            <span>Em 6 Meses:</span>
+                            <span class="result-val" id="res-6m">R$ 129,90</span>
+                        </div>
+                        <div class="result-row">
+                            <span>Em 1 Ano:</span>
+                            <span class="result-val" id="res-1y">R$ 259,80</span>
+                        </div>
+                        <div class="result-row">
+                            <span>Em 5 Anos:</span>
+                            <span class="result-val" id="res-5y">R$ 1.299,00</span>
+                        </div>
+                    </div>
 
-      <section class="calc-card">
-        <div class="card-title-group">
-          <span class="icon-box pink-icon">🧠</span>
-          <div>
-            <h2>Questionário de Triagem</h2>
-            <p>Perguntas adaptadas do questionário DSM-5 de dependência</p>
-          </div>
-        </div>
+                    <div class="tip-box" id="financial-tip">
+                        💡 Em 1 ano, você poderia montar uma reserva de emergência ou quitar faturas de cartão de crédito.
+                    </div>
+                </section>
 
-        <form id="triage-form">
-          <div class="triage-question">
-            <label>1. Já tentou recuperar perdas apostando valores maiores no mesmo dia?</label>
-            <select class="triage-select">
-              <option value="0">Nunca</option>
-              <option value="1">Às vezes</option>
-              <option value="2">Frequentemente</option>
-            </select>
-          </div>
+                <section class="calc-card">
+                    <div class="card-title-group">
+                        <span class="icon-box pink-icon">🧠</span>
+                        <div>
+                            <h2>Questionário de Triagem</h2>
+                            <p>Perguntas adaptadas do questionário DSM-5 de dependência</p>
+                        </div>
+                    </div>
 
-          <div class="triage-question">
-            <label>2. Já escondeu de pessoas próximas o valor real que você aposta?</label>
-            <select class="triage-select">
-              <option value="0">Não</option>
-              <option value="1">Sim</option>
-            </select>
-          </div>
+                    <form id="triage-form">
+                        <div class="triage-question">
+                            <label>1. Já tentou recuperar perdas apostando valores maiores no mesmo dia?</label>
+                            <select class="triage-select">
+                                <option value="0">Nunca</option>
+                                <option value="1">Às vezes</option>
+                                <option value="2">Frequentemente</option>
+                            </select>
+                        </div>
 
-          <div class="triage-question">
-            <label>3. Sente inquietação ou irritação quando não consegue apostar?</label>
-            <select class="triage-select">
-              <option value="0">Nunca</option>
-              <option value="1">Às vezes</option>
-              <option value="2">Frequentemente</option>
-            </select>
-          </div>
+                        <div class="triage-question">
+                            <label>2. Já escondeu de pessoas próximas o valor real que você aposta?</label>
+                            <select class="triage-select">
+                                <option value="0">Não</option>
+                                <option value="1">Sim</option>
+                            </select>
+                        </div>
 
-          <div class="triage-question">
-            <label>4. Já utilizou dinheiro destinado a despesas essenciais (aluguel, contas, alimentação)?</label>
-            <select class="triage-select">
-              <option value="0">Nunca</option>
-              <option value="1">Às vezes</option>
-              <option value="2">Frequentemente</option>
-            </select>
-          </div>
+                        <div class="triage-question">
+                            <label>3. Sente inquietação ou irritação quando não consegue apostar?</label>
+                            <select class="triage-select">
+                                <option value="0">Nunca</option>
+                                <option value="1">Às vezes</option>
+                                <option value="2">Frequentemente</option>
+                            </select>
+                        </div>
 
-          <button type="button" id="triage-btn" class="triage-action-btn">Ver Resultado do Diagnóstico</button>
-        </form>
+                        <div class="triage-question">
+                            <label>4. Já utilizou dinheiro destinado a despesas essenciais (aluguel, contas, alimentação)?</label>
+                            <select class="triage-select">
+                                <option value="0">Nunca</option>
+                                <option value="1">Às vezes</option>
+                                <option value="2">Frequentemente</option>
+                            </select>
+                        </div>
 
-        <div class="diagnostic-result" id="diagnostic-result">
-          <div class="diagnostic-header">
-            <span id="diag-badge" class="badge-success">✔ Baixo Risco Imediato</span>
-            <span id="diag-score">Score: <strong>1/7</strong></span>
-          </div>
-          <p id="diag-text">
-            Seus hábitos atuais não apontam dependência severa, mas lembre-se de que toda plataforma de aposta é desenhada matematicamente para acumular perdas no longo prazo.
-          </p>
-        </div>
-      </section>
+                        <button type="button" id="triage-btn" class="triage-action-btn">Ver Resultado do Diagnóstico</button>
+                    </form>
 
-    </div>
+                    <div class="diagnostic-result" id="diagnostic-result">
+                        <div class="diagnostic-header">
+                            <span id="diag-badge" class="badge-success">✔ Baixo Risco Imediato</span>
+                            <span id="diag-score">Score: <strong>1/7</strong></span>
+                        </div>
+                        <p id="diag-text">
+                            Seus hábitos atuais não apontam dependência severa, mas lembre-se de que toda plataforma de aposta é desenhada
+                            matematicamente para acumular perdas no longo prazo.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </main>
 
-  </main>
+        <footer>
+            <div class="container footer-content">
+                <div class="footer-left">
+                    <img src="assets/images/unisinos.png" alt="Logotipo Unisinos" />
+                </div>
 
-  <footer>
-    <div class="container footer-content">
-      <div class="footer-left">
-        <img src="assets/images/unisinos.png" alt="Logotipo Unisinos">
-      </div>
-      
-      <div class="footer-center">
-        <p>Esportes do Azar © 2026 – Projeto Acadêmico de Conscientização sobre Ludopatia. O jogo não é investimento. Se precisar de apoio, procure ajuda profissional.</p>
-      </div>
+                <div class="footer-center">
+                    <p>
+                        Projeto Acadêmico de Conscientização sobre Ludopatia. O jogo não é investimento. Se precisar de apoio, procure ajuda
+                        profissional.
+                    </p>
+                </div>
 
-      <div class="footer-right">
-        <p><strong>INTEGRANTES:</strong></p>
-        <p>GUSTAVO TAVARES</p>
-        <p>VICTOR MARQUES DA CRUZ</p>
-        <p>ANDRÉ LUIZ GONÇALVES TEIXEIRA</p>
-      </div>
-    </div>
-  </footer>
+                <div class="footer-right">
+                    <p><strong>INTEGRANTES:</strong></p>
+                    <p>GUSTAVO TAVARES</p>
+                    <p>VICTOR MARQUES DA CRUZ</p>
+                    <p>ANDRÉ LUIZ GONÇALVES TEIXEIRA</p>
+                </div>
+            </div>
+        </footer>
 
-  <script src="js/main.js"></script>
-  <script src="js/calculator.js"></script>
-</body>
+        <script src="js/main.js"></script>
+        <script src="js/calculator.js"></script>
+    </body>
 </html>
