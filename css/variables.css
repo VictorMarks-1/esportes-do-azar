@@ -1,11 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&display=swap");
+
 :root {
     --bg-color: #171f2a;
     --bg-card: #111822;
     --header-bg: #111822;
     --text-color: #ffffff;
     --text-muted: #94a3b8;
-    --border-color: #00ff66;
+    --border-color: #00ff00;
     --btn-bg: #2a3748;
     --border-radius: 0px;
-    --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --font-family: "Teko", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }

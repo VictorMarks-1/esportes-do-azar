@@ -14,20 +14,38 @@
     padding: 0 20px;
 }
 
-.hero-section, 
-.home-card, 
-/*.info-banner,*/ 
-.slot-machine-card, 
+.hero-section,
+.home-card,
+.slot-machine-card,
 .info-card,
-.calc-card, 
-.support-card, 
+.calc-card,
+.support-card,
 .library-section,
-.results-box, 
+.results-box,
 .diagnostic-result,
 .reel,
 .filter-buttons {
     background-color: var(--bg-card);
-    border: 3px solid #18f504;
+    border: 1px solid #18f504;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.home-card {
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.home-card:hover {
+    transform: translateY(-5px);
+    border-color: #18f504 !important;
+    background-color: #1a2332;
+}
+
+.info-banner {
+    background-color: var(--bg-card);
     padding: 25px;
     margin-bottom: 30px;
 }
@@ -37,7 +55,7 @@ h2,
 h3,
 h4 {
     color: var(--text-color);
-    font-weight: 700;
+    font-weight: 500;
 }
 
 p,
@@ -62,8 +80,15 @@ li {
     border: 1px solid #ffffff;
     padding: 4px 12px;
     font-size: 0.75rem;
-    font-weight: bold;
+    font-weight: 600;
+    letter-spacing: 0.5px;
     margin-bottom: 15px;
+}
+
+.calc-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 button,
@@ -90,7 +115,12 @@ button,
 
 button:hover,
 .btn-primary:hover,
-.btn-secondary:hover,
+.btn-secondary:hover {
+    background-color: #ff073a;
+    color: #ffffff;
+    border-color: #ff073a;
+}
+
 .filter-btn:hover {
     background-color: #ffffff;
     color: #000000;
@@ -99,6 +129,10 @@ button:hover,
 .form-group,
 .triage-question {
     margin-bottom: 20px !important;
+}
+
+.info-card ul {
+    padding-left: 25px;
 }
 
 input,

@@ -24,8 +24,8 @@ body {
 }
 
 header {
-    border-bottom: 1px solid #2a3748;
-    padding: 20px 0;
+    border-bottom: 0.5px solid #ffffff;
+    padding: 10px 0;
 }
 
 .header-content {
@@ -35,7 +35,7 @@ header {
 }
 
 .logo img {
-    height: 45px;
+    height: 80px;
     width: auto;
 }
 
@@ -67,6 +67,7 @@ nav a:hover {
 
 nav a.active {
     background-color: #ff073a;
+    padding: 0.1em 1em;
 }
 
 footer {
@@ -88,7 +89,7 @@ footer {
 .footer-center p {
     flex: 1;
     text-align: center;
-    font-size: 0.64rem;
+    font-size: 0.8rem;
 }
 
 .footer-left {
@@ -101,7 +102,8 @@ footer {
     height: 50px;
 }
 
-.footer-right {
+.footer-right p {
     text-align: right;
     line-height: 1.4;
+    font-size: 1.3em;
 }
