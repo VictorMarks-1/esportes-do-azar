@@ -26,7 +26,7 @@
 .reel,
 .filter-buttons {
     background-color: var(--bg-card);
-    border: 1px solid #18f504;
+    border: 1px solid #00ff66;
     padding: 5px;
     margin-bottom: 30px;
 }
@@ -88,7 +88,7 @@ li {
 .calc-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 button,
@@ -113,12 +113,24 @@ button,
     margin-bottom: 15px !important;
 }
 
-button:hover,
 .btn-primary:hover,
-.btn-secondary:hover {
+.btn-secondary:hover,
+.calc-action-btn:hover {
     background-color: #ff073a;
     color: #ffffff;
     border-color: #ff073a;
+}
+
+.spin-btn:hover {
+    background-color: #00ff66;
+    color: #000000;
+    border-color: #00ff66;
+}
+
+.triage-action-btn:hover {
+    background-color: #00ff66;
+    color: #ffffff;
+    border-color: #00ff66;
 }
 
 .filter-btn:hover {
@@ -129,6 +141,16 @@ button:hover,
 .form-group,
 .triage-question {
     margin-bottom: 20px !important;
+}
+
+.triage-action-btn {
+    width: 100% !important;
+    display: block !important;
+    box-sizing: border-box;
+}
+
+.info-card {
+    padding-left: 25px;
 }
 
 .info-card ul {
@@ -191,7 +213,7 @@ select:focus {
     margin-top: 20px;
 }
 
-.slot-page .game-header {
+.calc-her .slot-page .game-header {
     text-align: center !important;
     display: flex;
     flex-direction: column;
@@ -208,7 +230,6 @@ select:focus {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 15px;
 }
 
 .reels-container {
@@ -226,6 +247,7 @@ select:focus {
     align-items: center;
     font-size: 2.5rem;
     background-color: #0b0f15;
+    margin-bottom: 0 !important;
 }
 
 .slot-machine-card .cost-row {

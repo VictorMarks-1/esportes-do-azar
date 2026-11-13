@@ -95,7 +95,6 @@ footer {
 .footer-left {
     display: flex;
     align-items: center;
-    /*gap: 15px;*/
 }
 
 .footer-left img {
