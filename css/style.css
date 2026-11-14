@@ -23,10 +23,15 @@
 .library-section,
 .results-box,
 .diagnostic-result,
-.reel,
-.filter-buttons {
+.reel {
     background-color: var(--bg-card);
     border: 1px solid #00ff66;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.filter-buttons {
+    background-color: var(--bg-card);
     padding: 5px;
     margin-bottom: 30px;
 }
@@ -88,7 +93,24 @@ li {
 .calc-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.calc-card > .tip-box,
+.calc-card > .diagnostic-result {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.simulador .form-group {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+}
+
+.simulador .calc-action-btn {
+    margin-bottom: 40px !important;
 }
 
 button,
@@ -220,9 +242,10 @@ select:focus {
     align-items: center;
 }
 
-.slot-page .game-description {
-    text-align: center !important;
-    margin: 0 auto;
+.slot-page .game-header,
+.calc-page .calc-hero,
+.health-page .health-hero {
+    text-align: center;
 }
 
 .slot-machine-card {
@@ -303,6 +326,23 @@ select:focus {
 .support-link {
     color: #ffffff;
     text-decoration: none;
+}
+
+.support-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.support-card .support-btn {
+    margin-top: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.support-btn:hover {
+    background-color: #00ff66;
+    color: #ffffff;
+    border-color: #00ff66;
 }
 
 .clickable-card {
